@@ -1,0 +1,16 @@
+radio\_information.proto
+
+```proto
+syntax = "proto2";
+
+package oeo;
+
+message RadioInformation {
+  required uint32 id = 1;
+  required RadioInformationData data = 2;
+}
+
+message RadioInformationData {
+  required bool compliant = 1;
+}
+```

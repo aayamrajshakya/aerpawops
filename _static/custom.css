@@ -1,0 +1,10 @@
+/* Expand page width for ReadTheDocs theme */
+.wy-nav-content {
+    max-width: 100% !important;  /* Full width */
+    width: auto !important;
+    padding: 1em 2em;             /* Optional: adjust side padding */
+}
+
+.rst-content {
+    max-width: 100% !important;
+}
