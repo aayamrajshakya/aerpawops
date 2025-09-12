@@ -24,11 +24,6 @@ AERPAW Documentation made using ReadTheDocs.
    LAM6 - Power Distribution Board (PDB) <rstFiles/lam6_power_distribution_board>
 
 
-.. toctree::
-   :maxdepth: 1
-   :titlesonly:
-
-   rstFiles/sam4_bring_up_notes
 
 
 .. toctree::
@@ -67,7 +62,7 @@ AERPAW Documentation made using ReadTheDocs.
    :titlesonly:
 
    Amiga Ardurover Integration <rstFiles/amiga_ardurover_integration>
-   
+
 
 .. toctree::
    :maxdepth: 1
@@ -75,3 +70,9 @@ AERPAW Documentation made using ReadTheDocs.
    :titlesonly:
 
    SAM4 Software Setup <rstFiles/sam4/sam4_software_setup.rst>
+
+.. toctree::
+   :maxdepth: 1
+   :titlesonly:
+
+   rstFiles/sam4_bring_up_notes
