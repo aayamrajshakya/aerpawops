@@ -8,8 +8,8 @@ from docutils.parsers.rst import roles
 year = str(date.today().year)
 
 project = 'AERPAW Ops'
-copyright = '2025, AERPAW'
-author = 'AERPAW'
+copyright = u'{}, AERPAW'.format(year)
+author = u'AERPAW'
 release = '1.0'
 
 sys.path.insert(0, os.path.abspath('.'))
@@ -28,7 +28,6 @@ source_suffix = {
     '.rst': 'restructuredtext',
     '.md': 'markdown',
 }
-
 
 # Optional: enable MyST features
 myst_enable_extensions = [
@@ -59,9 +58,25 @@ html_theme_options = {
     "sticky_navigation": False,
 }
 
+html_context = {
+    "sidebar_external_links_caption": "Useful Links",
+    "sidebar_external_links": [
+        (
+            '<i class="fa fa-globe fa-fw"></i> Website',
+            "https://aerpaw.org/",
+        ),
+        (
+            '<i class="fa fa-file fa-fw"></i> User Manual',
+            "https://sites.google.com/ncsu.edu/aerpaw-user-manual/",
+        ),
+    ],
+}
+
 pygments_style = 'sphinx'
 html_show_sphinx = False
 html_show_sourcelink = False
+html_favicon = 'images/favicon.png'
+html_logo = 'images/logo.png'
 html_static_path = ['_static']
 html_css_files = [
     'custom.css',

@@ -6,3 +6,4 @@ sphinx-tabs
 mdit-py-plugins
 myst-parser
 linkify-it-py
+sphinx-autobuild
